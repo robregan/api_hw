@@ -1,0 +1,17 @@
+button {
+  height: 25px;
+  width: 5%;
+  color: gray;
+  background: pink;
+}
+body {
+  font-size: .95em;
+  font-family: 'Hachi Maru Pop', cursive;
+  background: lightgray;
+  text-align: center;
+}
+h3{
+  margin: 0 auto;
+  color: black;
+  width: 50%;
+}

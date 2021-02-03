@@ -1,0 +1,23 @@
+#price {
+  text-align: center;
+
+  font-size: 2.4em;
+  margin-top: 200px;
+
+}
+
+body {
+  background: black;
+}
+h3 {
+  color: #fff;
+  -webkit-animation: h1 8s infinite;
+  animation: h3 8s infinite;
+}
+@-webkit-keyframes h3 {
+    0%   {text-shadow: 0 0 3px #808080; color: teal;}
+    25%  {text-shadow: 0 0 12px #808080;}
+    50%  {text-shadow: 0 0 20px #808080; color: lavender;}
+    75%  {text-shadow: 0 0 12px #808080;}
+    100% {text-shadow: 0 0 3px #808080; color: teal;}
+}

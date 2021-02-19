@@ -1,4 +1,5 @@
 
+
 document.querySelector('button').addEventListener('click', getName)
 
 function getName(){
@@ -8,15 +9,21 @@ function getName(){
   fetch(url)
       .then(res => res.json()) // parse response as JSON
       .then(data => {
-        // forEach((data, i) => {
-        //   console.log([data.desc]);
-        // });
+      
 
         console.log(data)
+        if(data.length === 0) alert('try again..')
+       
+        let name = data[0].name 
+        
+        let type = data[0].race
         let info = data[0].desc
-          if(info === null){
-            info = data[1].desc
-          }
+          if(name === null) name = data[1].name
+          if(info === null) info = data[1].desc
+
+
+          document.getElementById('name').innerText = name
+          document.getElementById('type').innerText = type
           document.querySelector('h3').innerText = info
       })
       .catch(err => {

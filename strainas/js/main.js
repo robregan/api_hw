@@ -14,10 +14,10 @@ function getName(){
 
         console.log(data)
         let info = data[0].desc
-
-
-        document.querySelector('h3').innerText = info
-
+          if(info === null){
+            info = data[1].desc
+          }
+          document.querySelector('h3').innerText = info
       })
       .catch(err => {
           console.log(`error ${err}`)
